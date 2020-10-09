@@ -40,14 +40,14 @@ export const defaultHeaderFormats = {
     short: 'w'
   },
   day: {
-    long: 'dddd, LL',
-    mediumLong: 'dddd, LL',
-    medium: 'dd D',
+    long: 'dddd',
+    mediumLong: 'ddd',
+    medium: 'dd',
     short: 'D'
   },
   hour: {
-    long: 'dddd, LL, HH:00',
-    mediumLong: 'L, HH:00',
+    long: 'ddd, HH:00',
+    mediumLong: 'dd, HH:00',
     medium: 'HH:00',
     short: 'HH'
   },
