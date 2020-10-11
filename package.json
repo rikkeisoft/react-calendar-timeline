@@ -1,5 +1,5 @@
 {
-  "name": "react-calendar-timeline-dayjs",
+  "name": "@rikkeisoft/react-calendar-timeline-dayjs",
   "version": "0.27.1",
   "description": "react calendar timeline - dayjs version",
   "main": "lib/index.js",
@@ -21,45 +21,19 @@
   "homepage": "https://github.com/rikkeisoft/react-calendar-timeline",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rikkeisoft/react-calendar-timeline.git"
+    "url": "git+https://github.com/rikkeisoft/react-calendar-timeline.git"
   },
   "author": "Marius Andra <marius.andra@gmail.com>",
   "contributors": [
-    {
-      "name": "Stanisław Chmiela",
-      "email": "sjchmiela@gmail.com"
-    },
-    {
-      "name": "Mike Joyce",
-      "url": "https://github.com/mcMickJuice"
-    },
-    {
-      "name": "Samuel Rossetti"
-    },
-    {
-      "name": "amakhrov",
-      "url": "https://github.com/amakhrov"
-    },
-    {
-      "name": "Ahmad Ilaiwi",
-      "url": "https://github.com/Ilaiwi"
-    },
-    {
-      "name": "dkarnutsch",
-      "url": "https://github.com/dkarnutsch"
-    },
-    {
-      "name": "Alex Maclean",
-      "url": "https://github.com/acemac"
-    },
-    {
-      "name": "Kevin Mann",
-      "url": "https://github.com/kevinmanncito"
-    },
-    {
-      "name": "Rikkeisoft",
-      "url": "https://github.com/rikkeisoft"
-    }
+    "Stanisław Chmiela <sjchmiela@gmail.com>",
+    "Mike Joyce (https://github.com/mcMickJuice)",
+    "Samuel Rossetti",
+    "amakhrov (https://github.com/amakhrov)",
+    "Ahmad Ilaiwi (https://github.com/Ilaiwi)",
+    "dkarnutsch (https://github.com/dkarnutsch)",
+    "Alex Maclean (https://github.com/acemac)",
+    "Kevin Mann (https://github.com/kevinmanncito)",
+    "Rikkeisoft (https://github.com/rikkeisoft)"
   ],
   "license": "MIT",
   "keywords": [
@@ -155,5 +129,13 @@
     "webpack": "^4.16.3",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
+  },
+  "bugs": {
+    "url": "https://github.com/rikkeisoft/react-calendar-timeline/issues"
+  },
+  "directories": {
+    "doc": "doc",
+    "example": "examples",
+    "lib": "lib"
   }
 }
