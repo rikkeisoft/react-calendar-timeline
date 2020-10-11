@@ -1,7 +1,7 @@
 {
-  "name": "react-calendar-timeline",
-  "version": "0.27.0",
-  "description": "react calendar timeline",
+  "name": "react-calendar-timeline-dayjs",
+  "version": "0.27.1",
+  "description": "react calendar timeline - dayjs version",
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run build:lib",
@@ -18,10 +18,10 @@
     "lib",
     "src"
   ],
-  "homepage": "https://github.com/namespace-ee/react-calendar-timeline",
+  "homepage": "https://github.com/rikkeisoft/react-calendar-timeline",
   "repository": {
     "type": "git",
-    "url": "https://github.com/namespace-ee/react-calendar-timeline.git"
+    "url": "https://github.com/rikkeisoft/react-calendar-timeline.git"
   },
   "author": "Marius Andra <marius.andra@gmail.com>",
   "contributors": [
@@ -55,6 +55,10 @@
     {
       "name": "Kevin Mann",
       "url": "https://github.com/kevinmanncito"
+    },
+    {
+      "name": "Rikkeisoft",
+      "url": "https://github.com/rikkeisoft"
     }
   ],
   "license": "MIT",
