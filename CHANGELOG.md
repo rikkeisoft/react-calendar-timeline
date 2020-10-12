@@ -9,9 +9,10 @@ and this project adheres (more or less) to [Semantic Versioning](http://semver.o
 
 * Add `className` prop to Timeline component to override `react-calendar-timeline` class #682
 
-### 0.27.2
+### 0.27.3
 
-* replace momentjs by dayjs
+* replace momentjs by dayjs @rikkeisoft
+* add typings @rikkeisoft
 
 ## 0.26.7
 
