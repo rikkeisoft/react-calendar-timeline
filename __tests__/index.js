@@ -1,8 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
+import dayjs from 'dayjs'
 import Timeline from 'lib/Timeline'
-
-import moment from 'moment'
 
 const groups = [
   { id: 2, title: 'group 2' },
@@ -15,22 +14,22 @@ const items = [
     id: 1,
     group: 1,
     title: 'item 1',
-    start_time: moment('1995-12-25'),
-    end_time: moment('1995-12-25').add(1, 'hour')
+    start_time: dayjs('1995-12-25'),
+    end_time: dayjs('1995-12-25').add(1, 'hour')
   },
   {
     id: 2,
     group: 2,
     title: 'item 2',
-    start_time: moment('1995-12-25').add(-0.5, 'hour'),
-    end_time: moment('1995-12-25').add(0.5, 'hour')
+    start_time: dayjs('1995-12-25').add(-0.5, 'hour'),
+    end_time: dayjs('1995-12-25').add(0.5, 'hour')
   },
   {
     id: 3,
     group: 3,
     title: 'item 3',
-    start_time: moment('1995-12-25').add(2, 'hour'),
-    end_time: moment('1995-12-25').add(3, 'hour')
+    start_time: dayjs('1995-12-25').add(2, 'hour'),
+    end_time: dayjs('1995-12-25').add(3, 'hour')
   }
 ]
 
@@ -40,8 +39,8 @@ xdescribe('Timeline', () => {
       <Timeline
         groups={groups}
         items={items}
-        defaultTimeStart={moment('1995-12-25').add(-12, 'hour')}
-        defaultTimeEnd={moment('1995-12-25').add(12, 'hour')}
+        defaultTimeStart={dayjs('1995-12-25').add(-12, 'hour')}
+        defaultTimeEnd={dayjs('1995-12-25').add(12, 'hour')}
       />
     )
 
@@ -70,8 +69,8 @@ xdescribe('Timeline', () => {
       <Timeline
         groups={groups}
         items={items}
-        defaultTimeStart={moment('1995-12-25').add(-12, 'hour')}
-        defaultTimeEnd={moment('1995-12-25').add(12, 'hour')}
+        defaultTimeStart={dayjs('1995-12-25').add(-12, 'hour')}
+        defaultTimeEnd={dayjs('1995-12-25').add(12, 'hour')}
       />
     )
 
@@ -89,8 +88,8 @@ xdescribe('Timeline', () => {
         <Timeline
           groups={[]}
           items={items}
-          defaultTimeStart={moment('1995-12-25').add(-12, 'hour')}
-          defaultTimeEnd={moment('1995-12-25').add(12, 'hour')}
+          defaultTimeStart={dayjs('1995-12-25').add(-12, 'hour')}
+          defaultTimeEnd={dayjs('1995-12-25').add(12, 'hour')}
         />
       )
     } catch (err) {
@@ -102,8 +101,8 @@ xdescribe('Timeline', () => {
   it('renders items without corresponding group', () => {
     let itemsNoValidGroup = [
       {
-        start_time: moment('1995-12-25').add(-2, 'hour'),
-        end_time: moment('1995-12-25').add(2, 'hour'),
+        start_time: dayjs('1995-12-25').add(-2, 'hour'),
+        end_time: dayjs('1995-12-25').add(2, 'hour'),
         group: -1, // this ID is not found in groups!
         id: 1,
         title: 'Title'
@@ -116,8 +115,8 @@ xdescribe('Timeline', () => {
         <Timeline
           groups={groups}
           items={itemsNoValidGroup}
-          defaultTimeStart={moment('1995-12-25').add(-12, 'hour')}
-          defaultTimeEnd={moment('1995-12-25').add(12, 'hour')}
+          defaultTimeStart={dayjs('1995-12-25').add(-12, 'hour')}
+          defaultTimeEnd={dayjs('1995-12-25').add(12, 'hour')}
         />
       )
     } catch (err) {
@@ -133,8 +132,8 @@ xdescribe('Timeline', () => {
         groups={[]}
         items={items}
         stackItems
-        defaultTimeStart={moment('1995-12-25').add(-12, 'hour')}
-        defaultTimeEnd={moment('1995-12-25').add(12, 'hour')}
+        defaultTimeStart={dayjs('1995-12-25').add(-12, 'hour')}
+        defaultTimeEnd={dayjs('1995-12-25').add(12, 'hour')}
       >
         <Plugin />
       </Timeline>
@@ -167,8 +166,8 @@ xdescribe('Timeline', () => {
     const props = {
       items: items,
       groups: groups,
-      defaultTimeStart: moment('1995-12-25').add(-12, 'hour'),
-      defaultTimeEnd : moment('1995-12-25').add(12, 'hour'),
+      defaultTimeStart: dayjs('1995-12-25').add(-12, 'hour'),
+      defaultTimeEnd : dayjs('1995-12-25').add(12, 'hour'),
     }
 
     const wrapper = mount(<Timeline {...props} />)
@@ -179,8 +178,8 @@ xdescribe('Timeline', () => {
     const props = {
       items: items,
       groups: groups,
-      defaultTimeStart: moment('1995-12-25').add(-12, 'hour'),
-      defaultTimeEnd : moment('1995-12-25').add(12, 'hour'),
+      defaultTimeStart: dayjs('1995-12-25').add(-12, 'hour'),
+      defaultTimeEnd : dayjs('1995-12-25').add(12, 'hour'),
       itemRenderer: ({
         item,
         timelineContext,
@@ -209,8 +208,8 @@ xdescribe('Timeline', () => {
     const props = {
       items: items,
       groups: groups,
-      defaultTimeStart: moment('1995-12-25').add(-12, 'hour'),
-      defaultTimeEnd : moment('1995-12-25').add(12, 'hour'),
+      defaultTimeStart: dayjs('1995-12-25').add(-12, 'hour'),
+      defaultTimeEnd : dayjs('1995-12-25').add(12, 'hour'),
       itemRenderer: ({
         item,
         timelineContext,

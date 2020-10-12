@@ -19,6 +19,10 @@ import {
   leftResizeStyle,
   rightResizeStyle
 } from './styles'
+
+const utc = require('dayjs/plugin/utc')
+dayjs.extend(utc)
+
 export default class Item extends Component {
   // removed prop type check for SPEED!
   // they are coming from a trusted component anyway

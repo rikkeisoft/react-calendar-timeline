@@ -6,7 +6,7 @@ const config = {
   devtool: 'cheap-eval-source-map',
   context: path.join(__dirname, './demo'),
   entry: {
-    // vendor: ['react', 'react-dom', 'faker', 'interactjs', 'moment'],
+    // vendor: ['react', 'react-dom', 'faker', 'interactjs', 'dayjs'],
     demo: [
       `webpack-dev-server/client?http://0.0.0.0:${port}`,
       'webpack/hot/only-dev-server',

@@ -9,6 +9,10 @@ and this project adheres (more or less) to [Semantic Versioning](http://semver.o
 
 * Add `className` prop to Timeline component to override `react-calendar-timeline` class #682
 
+### 0.27.2
+
+* replace momentjs by dayjs
+
 ## 0.26.7
 
 * fix scrolling with trackpad @ilaiwi #679
@@ -49,11 +53,11 @@ Using controlled scroll and react-spring to trigger scrolling and create an anim
 
 * add documentation for `onItemDeselect` #350 @ilaiwi
 * solve a bug where `onItemDeselect` is not triggered as expected for several item clicks #350 @ilaiwi
-* fix row height on browser scaling #615 @gaston-niglia 
+* fix row height on browser scaling #615 @gaston-niglia
 
 ### Packages
 
-update to `node-sass@4.12.0` for newer versions of node. 
+update to `node-sass@4.12.0` for newer versions of node.
 
 ## 0.26.2
 
@@ -85,7 +89,7 @@ you can as well solve the issue without upgrading by adding the following style
 
 #### Breaking
 
-* Removed `<InfoLabel />` in favour of allowing for custom component to be rendered on move or resize. Check out the demo in `demo/app/demo-custom-info-label` for an example on how to display your own custom info label or [this example](https://codesandbox.io/s/timeline-demo-info-label-neec9). 
+* Removed `<InfoLabel />` in favour of allowing for custom component to be rendered on move or resize. Check out the demo in `demo/app/demo-custom-info-label` for an example on how to display your own custom info label or [this example](https://codesandbox.io/s/timeline-demo-info-label-neec9).
 
 
 ## 0.25.4
@@ -203,22 +207,22 @@ const items = [
     id: 1,
     group: 1,
     title: 'item 1',
-    start_time: moment(),
-    end_time: moment().add(1, 'hour')
+    start_time: dayjs(),
+    end_time: dayjs().add(1, 'hour')
   },
   {
     id: 2,
     group: 2,
     title: 'item 2',
-    start_time: moment().add(-0.5, 'hour'),
-    end_time: moment().add(0.5, 'hour')
+    start_time: dayjs().add(-0.5, 'hour'),
+    end_time: dayjs().add(0.5, 'hour')
   },
   {
     id: 3,
     group: 1,
     title: 'item 3',
-    start_time: moment().add(2, 'hour'),
-    end_time: moment().add(3, 'hour')
+    start_time: dayjs().add(2, 'hour'),
+    end_time: dayjs().add(3, 'hour')
   }
 ]
 
@@ -228,8 +232,8 @@ ReactDOM.render(
     <Timeline
       groups={groups}
       items={items}
-      defaultTimeStart={moment().add(-12, 'hour')}
-      defaultTimeEnd={moment().add(12, 'hour')}
+      defaultTimeStart={dayjs().add(-12, 'hour')}
+      defaultTimeEnd={dayjs().add(12, 'hour')}
     />
   </div>,
   document.getElementById('root')

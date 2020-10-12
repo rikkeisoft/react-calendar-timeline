@@ -1,5 +1,5 @@
 import React from 'react'
-import moment from 'moment'
+import dayjs from 'dayjs'
 import { mount } from 'enzyme'
 import Timeline from 'lib/Timeline'
 import { noop } from 'test-utility'
@@ -13,8 +13,8 @@ const defaultProps = {
 xdescribe('Timeline', () => {
   describe('initialiation', () => {
     it('sets the visibleTime properties to defaultTime props', () => {
-      const defaultTimeStart = moment('2018-01-01')
-      const defaultTimeEnd = moment('2018-03-01')
+      const defaultTimeStart = dayjs('2018-01-01')
+      const defaultTimeEnd = dayjs('2018-03-01')
 
       const props = {
         ...defaultProps,
@@ -30,8 +30,8 @@ xdescribe('Timeline', () => {
       })
     })
     it('sets the visibleTime properties to visibleTime props', () => {
-      const visibleTimeStart = moment('2018-01-01').valueOf()
-      const visibleTimeEnd = moment('2018-03-01').valueOf()
+      const visibleTimeStart = dayjs('2018-01-01').valueOf()
+      const visibleTimeEnd = dayjs('2018-03-01').valueOf()
 
       const props = {
         ...defaultProps,

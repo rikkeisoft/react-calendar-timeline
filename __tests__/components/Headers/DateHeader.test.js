@@ -6,7 +6,7 @@ import SidebarHeader from 'lib/headers/SidebarHeader'
 import TimelineHeaders from 'lib/headers/TimelineHeaders'
 import 'jest-dom/extend-expect'
 import { RenderHeadersWrapper } from '../../test-utility/header-renderer'
-import moment from 'moment'
+import dayjs from 'dayjs'
 
 describe('Testing DateHeader Component', () => {
   afterEach(cleanup)
@@ -76,8 +76,8 @@ describe('Testing DateHeader Component', () => {
 
       formatlabel.mock.calls.forEach(param => {
         const [[start, end], unit, labelWidth] = param
-        expect(moment.isMoment(start)).toBeTruthy()
-        expect(moment.isMoment(end)).toBeTruthy()
+        expect(dayjs.isDayjs(start)).toBeTruthy()
+        expect(dayjs.isDayjs(end)).toBeTruthy()
         expect(end.diff(start, 'd')).toBe(1)
         expect(unit).toBe('day')
         expect(labelWidth).toEqual(expect.any(Number))
@@ -200,8 +200,8 @@ describe('Testing DateHeader Component', () => {
         const a = intervals[index]
         const b = intervals[index + 1]
 
-        const timeStampA = moment(a, format)
-        const timeStampB = moment(b, format)
+        const timeStampA = dayjs(a, format)
+        const timeStampB = dayjs(b, format)
         const diff = timeStampB.diff(timeStampA, 'day')
         expect(diff).toBe(1)
       }
@@ -224,8 +224,8 @@ describe('Testing DateHeader Component', () => {
         const a = intervals[index]
         const b = intervals[index + 1]
 
-        const timeStampA = moment(a, format)
-        const timeStampB = moment(b, format)
+        const timeStampA = dayjs(a, format)
+        const timeStampB = dayjs(b, format)
         const diff = timeStampB.diff(timeStampA, 'day')
         expect(diff).toBe(1)
       }
@@ -249,8 +249,8 @@ describe('Testing DateHeader Component', () => {
         const a = intervals[index]
         const b = intervals[index + 1]
 
-        const timeStampA = moment(a, format)
-        const timeStampB = moment(b, format)
+        const timeStampA = dayjs(a, format)
+        const timeStampB = dayjs(b, format)
         const diff = timeStampB.diff(timeStampA, 'month')
         expect(diff).toBe(1)
       }
@@ -271,8 +271,8 @@ describe('Testing DateHeader Component', () => {
         const a = intervals[index]
         const b = intervals[index + 1]
 
-        const timeStampA = moment(a, format)
-        const timeStampB = moment(b, format)
+        const timeStampA = dayjs(a, format)
+        const timeStampB = dayjs(b, format)
         const diff = timeStampB.diff(timeStampA, 'day')
         expect(diff).toBe(1)
       }
@@ -344,8 +344,8 @@ describe('Testing DateHeader Component', () => {
       expect(renderer.mock.calls[0][0].intervalContext).toEqual(
         expect.objectContaining({
           interval: expect.objectContaining({
-            startTime: expect.any(moment),
-            endTime: expect.any(moment),
+            startTime: expect.any(dayjs),
+            endTime: expect.any(dayjs),
             labelWidth: expect.any(Number),
             left: expect.any(Number)
           }),
