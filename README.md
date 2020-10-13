@@ -199,6 +199,10 @@ The minimum width, in pixels, of a timeline entry when it's possible to resize. 
 
 Height of one line in the calendar in pixels. Default `30`
 
+## minGroupHeight
+
+Min height of group line in the calendar in pixels. Default `30`
+
 ## itemHeightRatio
 
 What percentage of the height of the line is taken by the item? Default `0.65`

@@ -206,6 +206,7 @@ declare module '@rikkeisoft/react-calendar-timeline-dayjs' {
         dragSnap?: number;
         minResizeWidth?: number;
         lineHeight?: number;
+        minGroupHeight?: number;
         itemHeightRatio?: number;
         minZoom?: number;
         maxZoom?: number;

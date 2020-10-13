@@ -371,9 +371,10 @@ function sum(arr = []) {
  * @param {*} items items to be stacked
  * @param {*} groupOrders the groupOrders object
  * @param {*} lineHeight
+ * @param {*} minGroupHeight
  * @param {*} stackItems should items be stacked?
  */
-export function stackAll(itemsDimensions, groupOrders, lineHeight, stackItems) {
+export function stackAll(itemsDimensions, groupOrders, lineHeight, minGroupHeight, stackItems) {
   var groupHeights = []
   var groupTops = []
 
@@ -391,6 +392,7 @@ export function stackAll(itemsDimensions, groupOrders, lineHeight, stackItems) {
       itemsDimensions,
       isGroupStacked,
       lineHeight,
+      minGroupHeight,
       groupTop
     )
     // If group height is overridden, push new height
@@ -415,10 +417,11 @@ export function stackAll(itemsDimensions, groupOrders, lineHeight, stackItems) {
  * @param {*} itemsDimensions
  * @param {*} isGroupStacked
  * @param {*} lineHeight
+ * @param {*} minGroupHeight
  * @param {*} groupTop
  */
-export function stackGroup(itemsDimensions, isGroupStacked, lineHeight, groupTop) {
-  var groupHeight = 0
+export function stackGroup(itemsDimensions, isGroupStacked, lineHeight, minGroupHeight, groupTop) {
+  var groupHeight = minGroupHeight
   var verticalMargin = 0
   // Find positions for each item in group
   for (let itemIndex = 0; itemIndex < itemsDimensions.length; itemIndex++) {
@@ -451,6 +454,7 @@ export function stackGroup(itemsDimensions, isGroupStacked, lineHeight, groupTop
  * @param {number} canvasTimeEnd
  * @param {*} keys
  * @param {number} lineHeight
+ * @param {number} minGroupHeight
  * @param {number} itemHeightRatio
  * @param {boolean} stackItems
  * @param {*} draggingItem
@@ -468,6 +472,7 @@ export function stackTimelineItems(
   canvasTimeEnd,
   keys,
   lineHeight,
+  minGroupHeight,
   itemHeightRatio,
   stackItems,
   draggingItem,
@@ -528,6 +533,7 @@ export function stackTimelineItems(
     dimensionItems,
     groupOrders,
     lineHeight,
+    minGroupHeight,
     stackItems
   )
   return { dimensionItems, height, groupHeights, groupTops }
@@ -705,6 +711,7 @@ export function calculateScrollCanvas(
         mergedState.canvasTimeEnd,
         props.keys,
         props.lineHeight,
+        props.minGroupHeight,
         props.itemHeightRatio,
         props.stackItems,
         mergedState.draggingItem,

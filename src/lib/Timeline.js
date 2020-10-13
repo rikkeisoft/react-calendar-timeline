@@ -42,6 +42,7 @@ export default class ReactCalendarTimeline extends Component {
     minResizeWidth: PropTypes.number,
     stickyHeader: PropTypes.bool,
     lineHeight: PropTypes.number,
+    minGroupHeight: PropTypes.number,
     itemHeightRatio: PropTypes.number,
 
     minZoom: PropTypes.number,
@@ -166,6 +167,7 @@ export default class ReactCalendarTimeline extends Component {
     minResizeWidth: 20,
     stickyHeader: true,
     lineHeight: 30,
+    minGroupHeight: 30,
     itemHeightRatio: 0.65,
 
     minZoom: 60 * 60 * 1000, // 1 hour
@@ -322,6 +324,7 @@ export default class ReactCalendarTimeline extends Component {
       this.state.canvasTimeEnd,
       props.keys,
       props.lineHeight,
+      props.minGroupHeight,
       props.itemHeightRatio,
       props.stackItems,
       this.state.draggingItem,
@@ -399,6 +402,7 @@ export default class ReactCalendarTimeline extends Component {
           prevState.canvasTimeEnd,
           nextProps.keys,
           nextProps.lineHeight,
+          nextProps.minGroupHeight,
           nextProps.itemHeightRatio,
           nextProps.stackItems,
           prevState.draggingItem,
@@ -469,6 +473,7 @@ export default class ReactCalendarTimeline extends Component {
       this.state.canvasTimeEnd,
       props.keys,
       props.lineHeight,
+      props.minGroupHeight,
       props.itemHeightRatio,
       props.stackItems,
       this.state.draggingItem,
@@ -1001,6 +1006,7 @@ export default class ReactCalendarTimeline extends Component {
         this.state.canvasTimeEnd,
         this.props.keys,
         this.props.lineHeight,
+        this.props.minGroupHeight,
         this.props.itemHeightRatio,
         this.props.stackItems,
         this.state.draggingItem,

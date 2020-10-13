@@ -7,6 +7,7 @@ export const visibleTimeEnd = 1540587600000
 export const props = {
   keys: defaultKeys,
   lineHeight: 30,
+  minGroupHeight:30,
   stackItems: true,
   itemHeightRatio: 0.75,
   visibleTimeEnd,
