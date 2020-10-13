@@ -11,7 +11,7 @@ import Timeline, {
   CustomHeader,
   SidebarHeader,
   DateHeader
-} from 'react-calendar-timeline'
+} from '@rikkeisoft/react-calendar-timeline-dayjs'
 
 import generateFakeData from '../generate-fake-data'
 

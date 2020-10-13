@@ -2,7 +2,7 @@ import dayjs from "dayjs";
 import React, {Component} from "react";
 
 import generateFakeData from '../generate-fake-data'
-import Timeline from "react-calendar-timeline";
+import Timeline from '@rikkeisoft/react-calendar-timeline-dayjs';
 
 const format = "DD.MM.YYYY"
 const holidays = [dayjs("01.01.2018", format), dayjs("06.01.2018", format), dayjs("30.03.2018", format),

@@ -1,10 +1,15 @@
+# NOTE
+
+This is forked version of [react-calendar-timeline](https://github.com/namespace-ee/react-calendar-timeline) which is replacing `moment` by `dayjs`.
+If you want to stick with `momentjs`, please use the original package.
+
 # React Calendar Timeline
 
 A modern and responsive React timeline component.
 
-![calendar demo](https://raw.githubusercontent.com/namespace-ee/react-calendar-timeline/master/demo.gif)
+![calendar demo](https://raw.githubusercontent.com/rikkeisoft/react-calendar-timeline/master/demo.gif)
 
-Checkout the [examples here](https://github.com/namespace-ee/react-calendar-timeline/tree/master/examples)!
+Checkout the [examples here](https://github.com/rikkeisoft/react-calendar-timeline/tree/master/examples)!
 
 # Contents
 
@@ -1166,8 +1171,8 @@ You need to include the `Timeline.css` file, either via static file reference or
 
 ## How can I have items with different colors?
 
-Now you can use item renderer for rendering items with different colors [itemRenderer](https://github.com/namespace-ee/react-calendar-timeline#itemrenderer).
-Please refer to [examples](https://github.com/namespace-ee/react-calendar-timeline/tree/master/examples#custom-item-rendering) for a sandbox example
+Now you can use item renderer for rendering items with different colors [itemRenderer](https://github.com/rikkeisoft/react-calendar-timeline#itemrenderer).
+Please refer to [examples](https://github.com/rikkeisoft/react-calendar-timeline/tree/master/examples#custom-item-rendering) for a sandbox example
 
 ## How can I add a sidebar on the right?
 
@@ -1202,7 +1207,7 @@ These module bundlers don't use the transpiled (ES5) code of this module. They l
 
 If that's too experimental, then the minimum you need is to add is the [`transform-class-properties`](https://babeljs.io/docs/plugins/transform-class-properties/) plugin that's in stage-2 and possibly the [`transform-object-rest-spread`](https://babeljs.io/docs/plugins/transform-object-rest-spread/) plugin from stage-3. However in this case it's easier to make sure you have at least [`stage-2`](https://babeljs.io/docs/plugins/preset-stage-2/) enabled.
 
-See [issue 51](https://github.com/namespace-ee/react-calendar-timeline/issues/51) for more details.
+See [issue 51](https://github.com/rikkeisoft/react-calendar-timeline/issues/51) for more details.
 
 Alternatively you may import the transpiled version of the timeline like this:
 
@@ -1215,7 +1220,7 @@ However doing so you lose on some of the features of webpack 2 and will potentia
 
 ## It doesn't work with `create-react-app`
 
-It's the same issue as above. See [issue 134](https://github.com/namespace-ee/react-calendar-timeline/issues/134#issuecomment-314215244) for details and options.
+It's the same issue as above. See [issue 134](https://github.com/rikkeisoft/react-calendar-timeline/issues/134#issuecomment-314215244) for details and options.
 
 ## What are the zIndex values for all the elements?
 
@@ -1255,7 +1260,7 @@ The pinch gesture on a trackpad (not a touch device) works in Chrome and Firefox
 If you like to improve React Calendar Timeline fork the repo and get started by running the following:
 
 ```bash
-$ git clone https://github.com/namespace-ee/react-calendar-timeline.git react-calendar-timeline
+$ git clone https://github.com/rikkeisoft/react-calendar-timeline.git react-calendar-timeline
 $ cd react-calendar-timeline
 $ yarn
 $ yarn start

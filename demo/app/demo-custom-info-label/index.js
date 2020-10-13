@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import dayjs from 'dayjs'
 
-import Timeline from 'react-calendar-timeline'
+import Timeline from '@rikkeisoft/react-calendar-timeline-dayjs'
 import CustomInfoLabel from './CustomInfoLabel'
 
 import generateFakeData from '../generate-fake-data'

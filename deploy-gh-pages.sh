@@ -11,7 +11,7 @@ ls -las
 
 SOURCE_BRANCH="master"
 TARGET_BRANCH="master"
-SSH_REPO="git@github.com:namespace-ee/react-calendar-timeline-docs"
+SSH_REPO="git@github.com:rikkeisoft/react-calendar-timeline-docs"
 DEPLOY_DIR="gh-pages"
 
 function doCompile {

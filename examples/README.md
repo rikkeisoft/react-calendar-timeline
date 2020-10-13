@@ -22,7 +22,7 @@ The `itemRenderer` component allows you to customize what contents are shown in 
 
 <!-- ## Custom Item Rendering using `timelineContext` - position sub items
 
-Using `itemRenderer` and `timelineContext` [docs](https://github.com/namespace-ee/react-calendar-timeline#itemrenderer), you can position elements within the context of the calendar within an item.
+Using `itemRenderer` and `timelineContext` [docs](https://github.com/rikkeisoft/react-calendar-timeline#itemrenderer), you can position elements within the context of the calendar within an item.
 
 [Example Codesandbox](https://codesandbox.io/s/6y15696o23) -->
 
@@ -40,7 +40,7 @@ You can restrict the moving and resizing of items at the item level by providing
 
 ## Right Sidebar
 
-Adding a right sidebar is as easy as passing `rightSidebarWidth`. Content in the right column is populated from the `rightTitle` property on the group. 
+Adding a right sidebar is as easy as passing `rightSidebarWidth`. Content in the right column is populated from the `rightTitle` property on the group.
 
 Note: If you are using Custom Headers then you need to add them with `SidebarHeader` with variant "right"
 
@@ -78,7 +78,7 @@ Using `Timeline Header` you can make the header stick to the top of the page whi
 
 [Example Codesandbox](https://codesandbox.io/s/w6xvqzno4w)
 
-## InfoLabel 
+## InfoLabel
 
 Native info label was removed with 0.26.0 and now the responsibility to render to render the Info Label is on the user. The example bellow has InfoLabel that matches exactly the removed label
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import dayjs from 'dayjs'
 
-import Timeline from 'react-calendar-timeline'
+import Timeline from '@rikkeisoft/react-calendar-timeline-dayjs'
 import containerResizeDetector from '../../../src/resize-detector/container'
 
 // you would use this in real life:

@@ -9,7 +9,7 @@ and this project adheres (more or less) to [Semantic Versioning](http://semver.o
 
 * Add `className` prop to Timeline component to override `react-calendar-timeline` class #682
 
-### 0.27.3
+### 0.27.5
 
 * replace momentjs by dayjs @rikkeisoft
 * add typings @rikkeisoft
@@ -175,11 +175,11 @@ import Timeline, {
 </Timeline>
 ```
 
-Check out the new docs before please [here](https://github.com/namespace-ee/react-calendar-timeline/tree/custom-headers#timeline-headers)
+Check out the new docs before please [here](https://github.com/rikkeisoft/react-calendar-timeline/tree/custom-headers#timeline-headers)
 
 #### removed props
 
-* `stickyOffset` and `stickyHeader` now you can make your header sticky by following this [examples](https://github.com/namespace-ee/react-calendar-timeline/tree/master/examples#custom-item-rendering)
+* `stickyOffset` and `stickyHeader` now you can make your header sticky by following this [examples](https://github.com/rikkeisoft/react-calendar-timeline/tree/master/examples#custom-item-rendering)
 * `headerRef` to get the headerRef you need to pass ref callback to `TimelineHeader` component
 * `headerLabelGroupHeight` and `headerLabelHeight` now you can pass a `height` prop to both `CustomHeader` and `DateHeader`
 * `headerLabelFormats` and `subHeaderLabelFormats` not you can pass `formatLabel` function to `DateHeader` with label width and start and end time of intervals
@@ -248,7 +248,7 @@ ReactDOM.render(
 * Provided a new key `groupLabelKey` to allow splitting of the key used to render the Sidebar and the InfoLabel visible during drag operations. `groupTitleKey` continues to be used to render the Sidebar. #442 @thiagosatoshi
 * fix scroll left/right causes item move/edit to be at incorrect time #401 @acemac
 * now `getResizeProps` take `leftClassName` and `rightClassName` and returns className for left and right props @acemac
-* fix functionality of `itemTitle` and `itemDivTitle` [issue](https://github.com/namespace-ee/react-calendar-timeline/issues/429#issuecomment-426456693) @acemac
+* fix functionality of `itemTitle` and `itemDivTitle` [issue](https://github.com/rikkeisoft/react-calendar-timeline/issues/429#issuecomment-426456693) @acemac
 
 ### 0.21.0
 
@@ -602,13 +602,13 @@ Plenty of bugfixes, tests and new demos in these 0.14 patch releases.
 * Fix demo for IE11 #44 by @lucidlemon
 * Package a .css file, not a .scss file as previously done. @mariusandra
 
-[0.9.0]: https://github.com/namespace-ee/react-calendar-timeline/compare/v0.8.6...v0.9.0
-[0.10.0]: https://github.com/namespace-ee/react-calendar-timeline/compare/v0.9.0...v0.10.0
-[0.10.1]: https://github.com/namespace-ee/react-calendar-timeline/compare/v0.10.0...v0.10.1
-[0.11.0]: https://github.com/namespace-ee/react-calendar-timeline/compare/v0.10.1...v0.11.0
-[0.11.1]: https://github.com/namespace-ee/react-calendar-timeline/compare/v0.11.0...v0.11.1
-[0.13.0]: https://github.com/namespace-ee/react-calendar-timeline/compare/v0.11.1...v0.13.0
-[0.14.0]: https://github.com/namespace-ee/react-calendar-timeline/compare/v0.13.0...v0.14.0
-[0.14.2]: https://github.com/namespace-ee/react-calendar-timeline/compare/v0.14.0...v0.14.2
-[0.14.11]: https://github.com/namespace-ee/react-calendar-timeline/compare/v0.14.2...v0.14.11
-[0.15.0]: https://github.com/namespace-ee/react-calendar-timeline/compare/v0.14.11...v0.15.0
+[0.9.0]: https://github.com/rikkeisoft/react-calendar-timeline/compare/v0.8.6...v0.9.0
+[0.10.0]: https://github.com/rikkeisoft/react-calendar-timeline/compare/v0.9.0...v0.10.0
+[0.10.1]: https://github.com/rikkeisoft/react-calendar-timeline/compare/v0.10.0...v0.10.1
+[0.11.0]: https://github.com/rikkeisoft/react-calendar-timeline/compare/v0.10.1...v0.11.0
+[0.11.1]: https://github.com/rikkeisoft/react-calendar-timeline/compare/v0.11.0...v0.11.1
+[0.13.0]: https://github.com/rikkeisoft/react-calendar-timeline/compare/v0.11.1...v0.13.0
+[0.14.0]: https://github.com/rikkeisoft/react-calendar-timeline/compare/v0.13.0...v0.14.0
+[0.14.2]: https://github.com/rikkeisoft/react-calendar-timeline/compare/v0.14.0...v0.14.2
+[0.14.11]: https://github.com/rikkeisoft/react-calendar-timeline/compare/v0.14.2...v0.14.11
+[0.15.0]: https://github.com/rikkeisoft/react-calendar-timeline/compare/v0.14.11...v0.15.0

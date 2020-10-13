@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import dayjs from 'dayjs'
 
-import Timeline from 'react-calendar-timeline'
-// import containerResizeDetector from 'react-calendar-timeline/lib/resize-detector/container'
+import Timeline from '@rikkeisoft/react-calendar-timeline-dayjs'
+// import containerResizeDetector from '@rikkeisoft/react-calendar-timeline-dayjs/lib/resize-detector/container'
 
 import generateFakeData from '../generate-fake-data'
 
