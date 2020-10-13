@@ -121,7 +121,7 @@ import Timeline, {
   TimelineHeaders,
   SidebarHeader,
   DateHeader
-} from 'react-calendar-timeline'
+} from '@rikkeisoft/react-calendar-timeline-dayjs'
 
 <Timeline>
   <TimelineHeaders>
@@ -322,7 +322,7 @@ ReactDOM.render(
 ```diff
 import Timeline,
 + {TimelineMarkers, CursorMarker}
-from 'react-calendar-timeline'
+from '@rikkeisoft/react-calendar-timeline-dayjs'
 
 <Timeline
 - showCursorLine

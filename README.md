@@ -596,7 +596,7 @@ import Timeline, {
   CustomMarker,
   TodayMarker,
   CursorMarker
-} from 'react-calendar-timeline'
+} from '@rikkeisoft/react-calendar-timeline-dayjs'
 
 <Timeline>
   <TimelineMarkers>
@@ -737,7 +737,7 @@ import Timeline, {
   TimelineHeaders,
   SidebarHeader,
   DateHeader
-} from 'react-calendar-timeline'
+} from '@rikkeisoft/react-calendar-timeline-dayjs'
 
 <Timeline>
   <TimelineHeaders>
@@ -809,7 +809,7 @@ import Timeline, {
   TimelineHeaders,
   SidebarHeader,
   DateHeader
-} from 'react-calendar-timeline'
+} from '@rikkeisoft/react-calendar-timeline-dayjs'
 
 <Timeline>
   <TimelineHeaders>
@@ -975,7 +975,7 @@ import Timeline, {
   TimelineHeaders,
   SidebarHeader,
   DateHeader
-} from 'react-calendar-timeline'
+} from '@rikkeisoft/react-calendar-timeline-dayjs'
 
 <Timeline>
   <TimelineHeaders>
@@ -1109,7 +1109,7 @@ import Timeline, {
   TimelineHeaders,
   SidebarHeader,
   DateHeader
-} from 'react-calendar-timeline'
+} from '@rikkeisoft/react-calendar-timeline-dayjs'
 
 <Timeline>
   <TimelineHeaders>
@@ -1212,8 +1212,8 @@ See [issue 51](https://github.com/rikkeisoft/react-calendar-timeline/issues/51) 
 Alternatively you may import the transpiled version of the timeline like this:
 
 ```js
-// import Timeline from 'react-calendar-timeline'  // ESnext version
-import Timeline from 'react-calendar-timeline/lib' // ES5 version
+// import Timeline from '@rikkeisoft/react-calendar-timeline-dayjs'  // ESnext version
+import Timeline from '@rikkeisoft/react-calendar-timeline-dayjs/lib' // ES5 version
 ```
 
 However doing so you lose on some of the features of webpack 2 and will potentially get a slightly larger bundle.
